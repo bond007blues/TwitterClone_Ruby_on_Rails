@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TweetApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>TwitterClone</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
+  <header>
+    <h1>TwitterClone</h1>
+  </header>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= yield %>
+
+  <footer>
+    <p>&copy; 2024 TwitterClone</p>
+  </footer>
+</body>
 </html>
