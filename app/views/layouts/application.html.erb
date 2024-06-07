@@ -4,7 +4,7 @@
   <title>TwitterClone</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
@@ -12,7 +12,9 @@
     <h1>TwitterClone</h1>
   </header>
 
-  <%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
   <footer>
     <p>&copy; 2024 TwitterClone</p>
