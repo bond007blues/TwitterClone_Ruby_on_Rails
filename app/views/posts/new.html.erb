@@ -1,8 +1,7 @@
-<h2>新しいつぶやき</h2>
+<h2>新規投稿</h2>
 <%= form_with model: @post, local: true do |form| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
       <ul>
         <% @post.errors.full_messages.each do |message| %>
           <li><%= message %></li>
@@ -16,6 +15,6 @@
     <%= form.text_area :content, rows: 3 %>
   </div>
 
-  <%= form.submit 'Create Post' %>
+  <%= form.submit '投稿' %>
 <% end %>
 <%= link_to '戻る', posts_path %>
